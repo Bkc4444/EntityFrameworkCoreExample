@@ -16,7 +16,6 @@ namespace EntityFrameworkCoreExample
 
         public DateTime DateOfBirth { get; set; }
 
-        
         public string EmailAddress { get; set; }
         // open Package Manager Console
         // When ever a change is made that would affect the database you have to do the command
