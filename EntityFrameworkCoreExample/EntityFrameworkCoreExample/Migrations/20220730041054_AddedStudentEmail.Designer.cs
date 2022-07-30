@@ -4,6 +4,7 @@ using EntityFrameworkCoreExample;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFrameworkCoreExample.Migrations
 {
     [DbContext(typeof(StudentContent))]
-    partial class StudentContentModelSnapshot : ModelSnapshot
+    [Migration("20220730041054_AddedStudentEmail")]
+    partial class AddedStudentEmail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

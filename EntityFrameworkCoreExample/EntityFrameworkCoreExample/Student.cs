@@ -16,6 +16,12 @@ namespace EntityFrameworkCoreExample
 
         public DateTime DateOfBirth { get; set; }
 
-
+        
+        public string EmailAddress { get; set; }
+        // open Package Manager Console
+        // When ever a change is made that would affect the database you have to do the command
+        // Add-Migration followed by a brief name of what was added
+        // in this case it was named Add-Migration AddedStudentEmail
+        // Then to update the database you have to run the command Update-Database
     }
 }
